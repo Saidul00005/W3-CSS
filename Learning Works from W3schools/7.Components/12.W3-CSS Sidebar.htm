@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-teal">
+            <h1>My Page</h1>
+        </div>
+
+        <img src="/Learning Works from W3schools/Images/Image-1.jpg" alt="Image" style="width:100%">
+
+        <div class="w3-container">
+            <h2>Sidebar Navigation Example</h2>
+            <p>The sidebar with is set with "style="width:25%".</p>
+            <p>The left margin of the page content is set to the same value.</p>
+        </div>
+
+    </div>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+            <h1>My Page</h1>
+        </div>
+    </div>
+
+    <img src="img_car.jpg" alt="Car" style="width:100%">
+
+    <div class="w3-container">
+        <p>This sidebar is hidden by default, (style="display:none")</p>
+        <p>You must click on the "hamburger" icon (top left) to open it.</p>
+        <p>The sidebar will hide a part of the page content.</p>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar-01">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+            <h1>My Page</h1>
+        </div>
+    </div>
+
+    <img src="/Learning Works from W3schools/Images/Image-2.jpg" alt="Image" style="width:100%">
+
+    <div class="w3-container">
+        <p>In this example, the sidebar is hidden (style="display:none")</p>
+        <p>It is shown when you click on the menu icon in the top left corner.</p>
+        <p>When it is opened, it hides all the page content (style.width="100%").</p>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar-01").style.width = "100%";
+            document.getElementById("mySidebar-01").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar-01").style.display = "none";
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar-02">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div class="w3-main" style="margin-left:200px">
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <h1>My Page</h1>
+            </div>
+        </div>
+
+        <div class="w3-container">
+            <h3>Responsive Sidebar</h3>
+            <p>The sidebar in this example will always be displayed on screens wider than 992px, and hidden on tablets
+                or mobile phones (screens less than 993px wide).</p>
+            <p>On tablets and mobile phones the sidebar is replaced with a menu icon to open the sidebar.</p>
+            <p>The sidebar will overlay of the page content.</p>
+            <p><b>Resize the browser window to see how it works.</b></p>
+        </div>
+
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar-02").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar-02").style.display = "none";
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar-03">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div id="main">
+
+        <div class="w3-teal">
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <h1>My Page</h1>
+            </div>
+        </div>
+
+        <img src="/Learning Works from W3schools/Images/Image-3.jpg" alt="Image" style="width:100%">
+
+        <div class="w3-container">
+            <p>In this example, the sidebar is hidden (style="display:none")</p>
+            <p>It is shown when you click on the menu icon in the top left corner.</p>
+            <p>When it is opened, it shifts the page content to the right.</p>
+            <p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value
+                "25%" matches the width of the sidebar.</p>
+        </div>
+
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar-03").style.width = "25%";
+            document.getElementById("mySidebar-03").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar-03").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-card" style="width:25%;right:0;">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-right:25%">
+
+        <div class="w3-container w3-teal">
+            <h1>My Page</h1>
+        </div>
+
+        <img src="/Learning Works from W3schools/Images/Image-1.jpg" alt="Image" style="width:100%">
+
+        <div class="w3-container">
+            <h2>Right Sidebar</h2>
+            <p>In this example, we have added <strong>right:0</strong> to the w3-sidebar.</p>
+            <p>The sidebar with is set with "style="width:25%".</p>
+            <p>The left margin of the page content is set to the same value.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:200px;right:0;"
+        id="mySidebar-04">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div class="w3-main" style="margin-right:200px">
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <h1>My Page</h1>
+            </div>
+        </div>
+
+        <div class="w3-container">
+            <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens
+                wider than 992px), and hidden on tablets and mobile phones (screens that are less than 992px wide).</p>
+            <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation
+                pane when clicked on: it will then overlay/sit on top of the page content.</p>
+            <p><b>Resize the browser window to understand how it works.</b></p>
+        </div>
+
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar-04").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar-04").style.display = "none";
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+        <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+        <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+        <div class="w3-container">
+            <h1>My Page</h1>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <p>In this example, we demonstrate how to use two side navigations.</p>
+        <p>We have created two "menu" buttons: one to open the side navigation from the left and one to open it from the
+            right.</p>
+    </div>
+
+    <script>
+        function openLeftMenu() {
+            document.getElementById("leftMenu").style.display = "block";
+        }
+
+        function closeLeftMenu() {
+            document.getElementById("leftMenu").style.display = "none";
+        }
+
+        function openRightMenu() {
+            document.getElementById("rightMenu").style.display = "block";
+        }
+
+        function closeRightMenu() {
+            document.getElementById("rightMenu").style.display = "none";
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-red" style="width:25%">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-dark-grey">
+            <h1>My Page</h1>
+        </div>
+
+        <div class="w3-container">
+            <p>Use the w3-color class to change the background color of the sidebar.</p>
+            <p>If you want an active/current link, to let the user know which page he/she is on, add the w3-color class
+                to one of the links as well.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="width:25%">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-dark-grey">
+            <h1>My Page</h1>
+        </div>
+
+        <div class="w3-container">
+            <p>Use a w3-border class to add a border to the sidebar.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-light-grey" style="width:25%">
+        <a href="#" class="w3-bar-item w3-button w3-border-bottom">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-border-bottom">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-border-bottom">Link 3</a>
+    </div>
+
+    <div style="margin-left:25%">
+
+        <header class="w3-container w3-dark-grey">
+            <h1>My Page</h1>
+        </header>
+
+        <div class="w3-container">
+            <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:25%">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button">Link 5</a>
+    </div>
+
+    <div style="margin-left:25%">
+
+        <header class="w3-container w3-dark-grey">
+            <h1>My Page</h1>
+        </header>
+
+        <div class="w3-container">
+            <p>Use the w3-card class to display the side navigation as a card (add shadows).</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-light-grey" style="width:25%">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-green">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-blue">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">Link 5</a>
+    </div>
+
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-dark-grey">
+            <h1>My Page</h1>
+        </div>
+
+        <div class="w3-container">
+            <p>When you mouse over the links inside the side navigation, the background color will change to grey by
+                default.</p>
+            <p>If you want a different background color on hover, use any of the w3-hover-color classes.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+    <div class="w3-sidebar w3-bar-block w3-large" style="width:25%">
+        <a href="#" class="w3-bar-item w3-button">Default</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none">None</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-hover-text-red">Red</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey">Grey</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-hover-text-green">Green</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue">Blue</a>
+    </div>
+
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-dark-grey">
+            <h1>My Page</h1>
+        </div>
+
+        <div class="w3-container">
+            <p>When you mouse over the links inside a sidebar, the background color will change to grey.</p>
+            <p>You can turn off the hover effect with the w3-hover-none class</p>
+            <p>And you can use the w3-hover-text-color if you only to highlight the text color on hover.</p>
+        </div>
+
+    </div>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <div class="w3-sidebar w3-bar-block w3-large w3-light-grey" style="width:30%">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-16">Padded</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-24">Padded</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-32">Padded</a>
+    </div>
+
+    <div style="margin-left:30%">
+
+        <div class="w3-container">
+            <h2>Sidebar Sizes</h2>
+            <p>Use any of the w3-small, w3-large, w3-xlarge, w3-xxlarge classes to change the font size of the sidebar.
+            </p>
+            <p>If you want to more padding, add any of the w3-padding classes to each item.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+    <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px">
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash"></i></a>
+    </div>
+
+    <div style="margin-left:70px">
+
+        <div class="w3-container">
+            <h2>Sidebar Icons</h2>
+            <p>In this example we have used icons in the sidebar.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:30%">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div style="margin-left:30%">
+
+        <div class="w3-container">
+            <h2>Dropdown in Sidebar</h2>
+            <p>In this example, we have added a dropdown menu inside the sidebar.</p>
+            <p>Notice the caret-down icon, which we use to indicate that this is a dropdown menu.</p>
+        </div>
+
+    </div>
+    <center>-----------------------------------------------</center>
+    <br>
+
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+            Accordion <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="demoAcc" class="w3-hide w3-white w3-card">
+            <a href="#" class="w3-bar-item w3-button">Link</a>
+            <a href="#" class="w3-bar-item w3-button">Link</a>
+        </div>
+
+        <div class="w3-dropdown-click">
+            <button class="w3-button" onclick="myDropFunc()">
+                Dropdown <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div class="w3-container" style="margin-left:160px">
+        <h2>Sidebar Accordion</h2>
+        <p>In this example, we have added an accordion and a dropdown menu inside the side navigation.</p>
+        <p>Click on both to understand how they differ from each other. The accordion will push down the content, while
+            the dropdown lays over the content.</p>
+    </div>
+
+    <script>
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myDropFunc() {
+            var x = document.getElementById("demoDrop");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+    <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebarr">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div>
+        <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+            <h1>Animated Sidebar</h1>
+            <p>Click on the "hamburger menu" to slide in the side navigation.</p>
+            <p>W3.CSS provide the following animation classes if you want to experiment for yourself:</p>
+            <p>w3-animate-left, w3-animate-top, w3-animate-bottom, w3-animate-right, w3-animate-opacity, w3-animate-zoom
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebarr").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebarr").style.display = "none";
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebarrr">
+        <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+    <div>
+        <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+            <h1>Sidebar Overlay</h1>
+            <p>The w3-overlay class can be used to create an overlay effect, when opening the sidebar. The w3-overlay
+                class adds a black background with a 50% opacity to the "page content" - this effect will "highlight"
+                the side navigation</p>
+            <p>Click on the "hamburger menu" to see the effect.</p>
+        </div>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebarrr").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebarrr").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+    <div class="w3-sidebar w3-bar-block w3-light-grey" style="width:50%">
+        <div class="w3-container w3-dark-grey">
+            <h4>Menu</h4>
+        </div>
+
+        <img src="/Learning Works from W3schools/Images/Image-1.jpg" alt="Image" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-red">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Projects <span
+                class="w3-tag w3-red w3-right w3-margin-right">8</span></a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+
+        <div class="w3-panel w3-blue-grey w3-display-container">
+            <span onclick="this.parentElement.style.display='none'"
+                class="w3-button w3-blue-grey w3-display-topright">&times;</span>
+            <p>Lorem ipsum box...</p>
+        </div>
+
+    </div>
+
+    <div style="margin-left:50%">
+
+        <div class="w3-container">
+            <h2>Sidebar</h2>
+            <p>Put any element inside the sidebar.</p>
+        </div>
+
+    </div>
+
+    <center>-----------------------------------------------</center>
+    <br>
+
+</body>
+
+</html>
+
